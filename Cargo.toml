@@ -1,0 +1,30 @@
+[package]
+name = "cryptotrader"
+version = "0.1.0"
+authors = ["Sammy Shi <1786806918@qq.com>"]
+edition = "2018"
+
+[dependencies]
+
+binance = {path = "binance-rs/"}
+huobi = {path = "huobi-rs/"}
+okex = {path = "okex-rs/"}
+math = "0.0.2"
+toml = "*"
+serde = "^1.0"
+serde_derive = "^1.0"
+serde_json = "*"
+dirs = "1.0"
+log = "0.4.5"
+simple_logger = "1.0.1"
+chrono = "0.4.6"
+
+
+[lib]
+name = "cryptotrader"
+
+[[bin]]
+name = "cryptotrader"
+pa = "src/main.rs"
+
+

@@ -1,0 +1,26 @@
+[package]
+name = "okex"
+version = "0.1.0"
+authors = ["Sammy Shi <1786806918@qq.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = "0.9.14"
+serde = { version = "^1.0", features = ["derive"] }
+serde_json = "^1.0"
+time = "0.1.38"
+ring = "0.13-alpha"
+hex = "0.3"
+base64 = "~0.6.0"
+crypto = { version = "0.2.36", package = "rust-crypto" }
+serialize = { version = "^0.3", package = "rustc-serialize" }
+data-encoding = "2.1.2"
+chrono = "^0.4"
+percent-encoding = "1.0.1"
+log = "0.4.5"
+simple_logger = "1.0.1"
+
+[lib]
+name = "okex"
