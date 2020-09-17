@@ -5,7 +5,7 @@ use core::fmt;
 use std::error::Error;
 use serde::{Deserialize, Deserializer, Serialize};
 
-pub type APIResult<T> = Result<T, Box<std::error::Error>>;
+pub type APIResult<T> = Result<T, Box<dyn std::error::Error>>;
 
 
 #[derive(Serialize, Deserialize, Debug)]
